@@ -118,8 +118,8 @@ Note:
 We propose a novel approach to evaluate the generalization ability of agentic models. Specifically, we build an automated synthesis pipeline that allows users to randomly generate complex tasks for arbitrary scenarios given a set of keywords. Each generated task is equipped with a corresponding tool set and an executable environment. Since the tools in these environments are highly randomized, we evaluate the model’s performance in such environments to assess its generalization capability. LongCat consistently achieves superior performance under these settings, demonstrating strong generalization ability in agentic scenarios. We also provide a [video demo](https://youtu.be/zc_OIhxFMFw) for illustration.
 
 <div align="center">
-  <a href="https://youtu.be/7eVgUD351FY" target="_blank">
-    <img src="https://img.youtube.com/vi/7eVgUD351FY/maxresdefault.jpg" alt="video">
+  <a href="https://youtu.be/zc_OIhxFMFw" target="_blank">
+    <img src="https://img.youtube.com/vi/zc_OIhxFMFw/maxresdefault.jpg" alt="video">
   </a>
 </div>
 
