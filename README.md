@@ -123,6 +123,32 @@ We propose a novel approach to evaluate the generalization ability of agentic mo
   </a>
 </div>
 
+
+## Quick Start
+
+### Chat Template Overview
+
+To support advanced tool-use scenarios and sophisticated reasoning paradigms, we have introduced significant updates to our chat template, as defined in the `tokenizer_config.json` file. 
+
+#### Basic Usage
+The chat template can be applied using the ```apply_chat_template``` method. Below is a standard implementation:
+
+```python
+text = tokenizer.apply_chat_template(
+    messages,
+    tools=tools,
+    tokenize=False,
+    enable_thinking=True,
+    add_generation_prompt=True,
+    save_history_reasoning_content=False
+)
+```
+
+#### Key Features
+*   **Tool Declaration:** Available tools are declared at the beginning of the session to activate the model's tool-use capabilities and define the scope of available actions.
+*   **Interleaved Thinking:** By default, the template employs an interleaved thinking approach. In this mode, the final response is preserved while thinking content from previous user interactions is discarded to maintain a concise context window. Tool calls and responses are retained to provide necessary execution history.
+*   **Reasoning Retention:** If you need to preserve the model's thinking content across turns, you can enable this by setting `save_history_reasoning_content=True`.
+
 #### Implementation Examples
 
 ##### 1. Multi-Turn Dialogue
@@ -131,7 +157,7 @@ This example demonstrates how the template handles conversational history and th
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model_name = "meituan-longcat/LongCat-Flash-Thinking-2601"
+model_name = "meituan-longcat/LongCat-Flash-Thinking"
 
 # Load the tokenizer and the model
 tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -222,6 +248,9 @@ generated_ids = model.generate(
 output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist() 
 
 print(tokenizer.decode(output_ids, skip_special_tokens=True).strip("\n"))
+
+# Example Output:
+# The tool returned $$360198$$. Therefore, $$125679 + 234519 = 360198$$.\n</longcat_think>\nThe sum of $$125679$$ and $$234519$$ is $$360198$$.</longcat_s>
 ```
 
 ## Deployment
