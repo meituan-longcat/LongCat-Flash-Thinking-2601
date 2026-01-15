@@ -157,7 +157,7 @@ This example demonstrates how the template handles conversational history and th
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model_name = "meituan-longcat/LongCat-Flash-Thinking"
+model_name = "meituan-longcat/LongCat-Flash-Thinking-2601"
 
 # Load the tokenizer and the model
 tokenizer = AutoTokenizer.from_pretrained(model_name)
