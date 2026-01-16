@@ -13,6 +13,9 @@
   <a href="https://huggingface.co/meituan-longcat" target="_blank" style="margin: 2px;">
     <img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-LongCat-ffc107?color=ffc107&logoColor=white" style="display: inline-block; vertical-align: middle;"/>
   </a>
+  <a href="https://www.modelscope.cn/models/meituan-longcat/LongCat-Flash-Thinking-2601" target="_blank" style="margin: 2px;">
+    <img alt="ModelScope" src="https://img.shields.io/badge/ModelScope-LongCat-blue" style="display: inline-block; vertical-align: middle;"/>
+  </a>
 </div>
 
 <div align="center" style="line-height: 1;">
