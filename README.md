@@ -92,7 +92,7 @@ We've launched Heavy Thinking Mode on the Longcat AI platform. Feel free to try 
 | τ²-Noise (Avg@4) | 64.1 | 63.1 | 44.3 | 66.0 | 59.4 | 57.3 | 65.0 | **67.1** |
 | VitaBench (Avg@4) | 24.0 | 12.8 | 14.5 | 18.3 | 28.5 | **31.5** | 24.3 | <u>29.3</u> |
 | VitaBench-Noise (Avg@4) | 14.0 | 9.2 | 6.5 | 10.8 | 20.3 | **20.8** | 19.0 | <u>20.5</u> |
-| Random Complex Tasks (Avg@4) | 32.5 | 29.7 | 32.7 | 25.3 | 32.6 | 32.5 | 17.2 | **35.8** |
+| Random Complex Tasks (Avg@4) | 32.5 | 29.7 | 28.3 | 25.3 | 32.6 | 32.5 | 17.2 | **35.8** |
 | **General QA** | | | | | | | | |
 | HLE text-only (w/o tools) | 24.1 | 24.4 | 17.8 | <u>26.9</u> | 32.0 | **40.3** | 34.5† | 25.2 |
 | GPQA-Diamond (Avg@16) | <u>86.9</u> | 85.4 | 80.5 | 84.9 | 86.9 | 91.9 | **92.9** | 80.5 / 85.2‡ |
