@@ -32,6 +32,10 @@
     <img alt="License" src="https://img.shields.io/badge/License-MIT-f5de53?&color=f5de53" style="display: inline-block; vertical-align: middle;"/>
   </a>
 </div>
+<p align="center">
+  <a href="https://github.com/meituan-longcat/LongCat-Flash-Thinking-2601/blob/main/LongCat_Flash_Thinking_2601_Technical_Report.pdf"><b>Tech Report</b>&nbsp;📄</a>
+</p>
+
 
 <hr>
 <div align="center" style="line-height: 1;">
